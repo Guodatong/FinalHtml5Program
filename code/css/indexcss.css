@@ -1,0 +1,36 @@
+.clearfix{
+	
+	position: relative;
+	display: inline-block;
+
+	vertical-align: middle;
+	line-height: 60px;
+
+	right: 0px;
+	position: absolute;
+
+	font-size: 14px;
+
+	display: inline;
+	
+}
+.layui-nav{
+	box-sizing: border-box;
+}
+
+.icon-type{
+	margin-right: 8px;
+	margin-left: 5px;
+
+}
+.icon-type:hover{
+color: white;
+cursor: pointer;
+
+}
+.wrap-content{
+	height: 100%;
+	width: 100%;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
