@@ -4,13 +4,17 @@
 		<meta charset="UTF-8">
 		<title>Home Appliance Sales</title>
 		<link rel="stylesheet" href="plugin/layui/css/layui.css" />
+		<script type="text/javascript" src="js/jquery-3.2.0.min.js" ></script>
 		<script type="text/javascript" src="plugin/layui/layui.js" ></script>
 		<script type="text/javascript" src="js/vue.js" ></script>
 		<link rel="stylesheet" href="icons/iconfont.css" />
-		<link rel="stylesheet" href="css/indexcss.css" />
+		<link rel="stylesheet" href="icons/icon_foot/iconfont.css" />
+		
 		<link rel="stylesheet" href="plugin/layer/skin/default/layer.css" />
 		<script type="text/javascript" src="plugin/layer/layer.js" ></script>
 		<link rel="stylesheet" href="css/swiper.min.css" />
+		<link rel="stylesheet" href="css/indexcss.css" />
+
 	</head>
 	<body>
 		<div class="content ">
@@ -63,7 +67,7 @@
 							<a href="#" onclick="showQRcode(this)"><span class="icon-type"><i class="iconfont icon-lianxi "></i></span>{{contactus}}</a>
 						</li>
 						<div class="clearfix">
-							<span class="icon-type "><i class="iconfont icon-wo "></i>{{account}}</span>
+							<span class="icon-type " onclick="login()"><i class="iconfont icon-wo "></i>{{account}}</span>
 							<span class="icon-type "><i class="iconfont icon-gouwuche"></i>{{cart}}</span>
 			</div>
 						
@@ -81,38 +85,107 @@
 				
 				<div class="swiper">
 					<link rel="stylesheet" href="css/swipercss.css" />
+					
+					
 					<div class="swiper-container" dir="rtl">
 				        <div class="swiper-wrapper">
-				            <!--<div class="swiper-slide"><div class="swiper-content"><img width="100%" height="100%" src="img/aircondition/conditioner_1.png" /></div></div>-->
-				            <div class="swiper-slide"><div class="swiper-content"><img   width="100%" height="100%" src="img/refrigerator/refri_2.jpg" /></div></div>
-				            <div class="swiper-slide"><div class="swiper-content"><img width="100%" height="100%" src="img/vaccumcleaner/vaccumcleaner_1.jpg" /></div></div>
-				            <div class="swiper-slide"><div class="swiper-content"><img width="100%" height="100%" src="img/washingmechine/washingmechine_1.jpg" /></div></div>
+				        	<div class="swiper-slide">
+				        		<div class="swiper-dt1">
+									<span>Air Conditioner</span><br  />
+									<span class="btn">More Info</span>
+								</div>
+				        		<div class="swiper-content"><img width="100%"  src="img/aircondition/conditioner1900.png" /></div>
+				        	</div>
+				        	<div class="swiper-slide">
+				        		<div class="swiper-dt2">
+									<span>Refrigerator</span><br  />
+									<span class="btn">More Info</span>
+								</div>
+				        		<div class="swiper-content"><img width="100%" src="img/refrigerator/refri_1900.jpg" /></div>
+				        	</div>
+				        	<div class="swiper-slide">
+				        		<div class="swiper-dt3">
+									<span>Refrigerator</span><br  />
+									<span class="btn">More Info</span>
+								</div>
+				        		<div class="swiper-content"><img width="100%" src="img/refrigerator/refri_2_1900.jpg" /></div>
+				        	</div>
+				        	<div class="swiper-slide">
+				        		<div class="swiper-dt4">
+									<span>Vaccum Cleaner</span><br  />
+									<span class="btn">More Info</span>
+								</div>
+				        		<div class="swiper-content"><img width="100%" src="img/vaccumcleaner/vaccumcleaner1900.jpg" /></div>
+				        	</div>
+				        	<div class="swiper-slide">
+				        		<div class="swiper-dt5">
+									<span>Washing Machine</span><br  />
+									<span class="btn">More Info</span>
+								</div>
+				        		<div class="swiper-content"><img width="100%" src="img/washingmechine/washingmechine1900.jpg" /></div>
+				        	</div>
 				        </div>
 				        <!-- Add Pagination -->
 				        <div class="swiper-pagination"></div>
 				    </div>
-				    		
+				    	<script type="text/javascript" src="js/swiper.js" ></script>	
+				    	<script>        
+
+						    var swiper = new Swiper('.swiper-container', {
+						    	width : window.innerWidth,
+						    	autoHeight: true,
+						        pagination: '.swiper-pagination',
+						        paginationClickable: true,
+						        autoplay:3000,
+						        preloadImages:true,
+						        loop:true,
+						        autoplayDisableOnInteraction : false,
+						        initialSlide:4,
+						    });
+						  </script>
 				</div>
+				
+				<div class="main-content">
+					<img />
+					<div class="detail">
+						
+					</div>
+				</div>
+				
+				
 				<!--主要内容-->
+			</div>
+			<div class="foot">
+				<div class="footer-content">
+					<div class="foot1"></div>
+					<hr />
+					<div class="footthank">
+						
+					</div>
+					<hr />
+					<div class="foot2">
+						<div class="foot-license">
+						This WebSite is open On GitHub <a href="https://github.com/zhangcy4553/FinalHtml5Program"><span class="link" style="color: lightblue;">Link</span></a>
+						(Order MIT License)
+						--Design By Allen
+						<a href="http://weibo.com/6044946631/profile" style="color: #999;"><i class=" iconfont icon-weibo3"></i>Weibo</a>
+						</div>
+						<div class="foot-icon" >
+							<a href="https://github.com/zhangcy4553/FinalHtml5Program" style="color: #999;"><i class=" iconfont icon-github1"></i>Git</a>
+							
+							<a href="http://www.a113n.cn/node" style="color: #999;"><i class=" iconfont icon-lianjie"></i></a>(To Index)
+							
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		
-		<script type="text/javascript" src="js/swiper.js" ></script>
+		
 		<script type="text/javascript" src="js/language.js" ></script>
 		<script type="text/javascript" src="js/somefunction.js" ></script>
 		<script type="text/javascript" src="js/initLayui.js" ></script>
-<script>        
 
-    var swiper = new Swiper('.swiper-container', {
-    	width : window.innerWidth,
-    	autoHeight: true,
-//  	direction: 'vertical',
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        autoplay:3000,
-        preloadImages:true
-    });
-  </script>
 </body>
 	</body>
 </html>

@@ -23,3 +23,20 @@ layer.open({
 });    
 layer.msg('Scan The WeChat QR Code!');
 }
+
+function login(){
+	console.log("login");
+	if(localStorage.user==null){
+		layer.open({
+  type: 2,
+  title: 'Please Login~',
+  shadeClose: true,
+  shade: 0.5,
+  area: ['380px', '580px'],
+  content: './login/' //iframe的url
+}); 
+	}else{
+		layer.msg('You Already Login!');
+		nav.account=localStorage.user;
+	}
+}

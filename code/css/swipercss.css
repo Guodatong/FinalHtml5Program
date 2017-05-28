@@ -19,11 +19,91 @@
         align-items: center;
     }
     
- /*.swiper-container{
-	height: calc(100%-200px);
-	height: -webkit-calc(100%-200px);
- }
 .swiper-content{
-	height: calc(100%-200px);
-	height: -webkit-calc(100%-200px);
-}*/
+	width: 100%;
+}
+.swiper .swiper-dt1{
+	color: white;
+	font-family: sans-serif;
+	font-size: 55px;
+	position: absolute;
+	margin-left: -680px;
+	margin-top:0px ;
+	z-index: 9999;
+	cursor: pointer;
+}
+.swiper .swiper-dt1 .btn{
+	border: solid 3px white; font-size: 25px; border-radius: 15px; padding-left: 8px; padding-right: 8px;
+}
+.swiper .swiper-dt1 .btn:hover{
+	color: rgb(155,80,80);
+	border-color: rgb(155,50,50);
+}
+.swiper .swiper-dt2{
+	color: white;
+	font-family: sans-serif;
+	font-size: 45px;
+	position: absolute;
+	margin-left: 50%;
+	margin-top:60px ;
+	z-index: 9999;
+}
+.swiper .swiper-dt2 .btn{
+	border: solid 3px white; font-size: 25px; border-radius: 15px; padding-left: 8px; padding-right: 8px;
+}
+.swiper .swiper-dt2 .btn:hover{
+	color: rgb(155,80,80);
+	border-color: rgb(155,50,50);
+}
+.swiper .swiper-dt3{
+	color: white;
+	font-family: sans-serif;
+	font-size: 45px;
+	position: absolute;
+	margin-left: -200px;
+	margin-top:-280px ;
+	z-index: 9999;
+	cursor: pointer;
+}
+.swiper .swiper-dt3 .btn{
+	border: solid 3px white; font-size: 25px; border-radius: 15px; padding-left: 8px; padding-right: 8px;
+}
+.swiper .swiper-dt3 .btn:hover{
+	color: rgb(155,80,80);
+	border-color: rgb(155,50,50);
+}
+.swiper .swiper-dt4{
+	color: #363636;
+	font-family: sans-serif;
+	font-size: 40px;
+	position: absolute;
+	margin-left: -450px;
+	margin-top:95px ;
+	z-index: 9999;
+	cursor: pointer;
+}
+.swiper .swiper-dt4 .btn{
+	border: solid 3px #363636; font-size: 25px; border-radius: 15px; padding-left: 8px; padding-right: 8px;
+}
+.swiper .swiper-dt4 .btn:hover{
+	color: rgb(155,80,80);
+	border-color: rgb(155,50,50);
+}
+.swiper .swiper-dt5{
+	color: #1A242F;
+	border-color: #1A242F;
+	font-family: sans-serif;
+	font-size: 45px;
+	position: absolute;
+	margin-left: -680px;
+	margin-top:150px ;
+	z-index: 9999;
+	cursor: pointer;
+}
+.swiper .swiper-dt5 .btn{
+	border: solid 3px black; font-size: 25px; border-radius: 15px; padding-left: 8px; padding-right: 8px;
+}
+.swiper .swiper-dt5 .btn:hover{
+	color: rgb(155,80,80);
+	border-color: rgb(155,50,50);
+}
