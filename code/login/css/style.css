@@ -15,7 +15,8 @@ body .container {
   height: 500px;
   margin: auto;
   margin-top: 15px;
-  padding: 0 0 0 0;;
+  padding: 0 0 0 0;
+  padding-top: 20px;
   background-color: #ffffff;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 30px;
 }

@@ -10,7 +10,7 @@ var nav=new Vue({
 				language: "Language Select",
 				contactus: "Contact Us",
 				airconditioner:"Air Conditioner",
-				account:"My Account",
+				account:" Log in",
 				cart:"Cart"
 			}
 			
@@ -30,11 +30,11 @@ function changeLanguage(type){
 		nav.language="Language Select";
 		nav.contactus="Contact US";
 		nav.airconditioner="Air Conditioner";
-		nav.account=" Account";
+		nav.account=" Log in";
 		nav.cart=" Cart";
 		
-	}else if(type=='zh-CN'){
-		localStorage.language="zh-CN";
+	}else if(type=='zh-Cn'){
+		localStorage.language="zh-Cn";
 		console.log("changetoCh");
 		nav.homepage="首页";
 		nav.television="电视机";
@@ -45,7 +45,7 @@ function changeLanguage(type){
 		nav.language="语言选择";
 		nav.contactus="联系我们";
 		nav.airconditioner="空调";
-		nav.account=" 账户";
+		nav.account=" 登录";
 		nav.cart=" 购物车";
 		
 	}

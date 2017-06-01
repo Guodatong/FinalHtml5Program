@@ -45,14 +45,14 @@ re = /^(((13[0-9]{1})|(15[0-9]{1})|(1[0-9]{2}))+\d{8})$/;
 
  
 		console.log(tel + "  code" + code);
-		$.ajax({
-			type: 'get',
-			url: 'http://106.ihuyi.com/webservice/sms.php?method=Submit&account=' + account + '&password=' + password + "&mobile=" + tel + "&content=" + content,
-			dataType: 'jsonp',
-			error:function(data){
-				console.log(data);
-			}
-		});
+//		$.ajax({
+//			type: 'get',
+//			url: 'http://106.ihuyi.com/webservice/sms.php?method=Submit&account=' + account + '&password=' + password + "&mobile=" + tel + "&content=" + content,
+//			dataType: 'jsonp',
+//			error:function(data){
+//				console.log(data);
+//			}
+//		});
 //链接API发送验证码
 
 		time(document.getElementById("send_code"));

@@ -38,5 +38,18 @@ function login(){
 	}else{
 		layer.msg('You Already Login!');
 		nav.account=localStorage.user;
+		layer.confirm('You Already Login ,Are u want to Log out?', {
+		  btn: ['Yes','No'] //按钮
+		}, function(){
+		  layer.msg('Loging Out', {icon: 1});
+		  localStorage.removeItem('user');
+		  if(localStorage.language='zh-Cn'){
+		  	nav.account=" 登录";
+		  }else if(localStorage.language='en-En'){
+		  	nav.account=' Log in';
+		  }
+		}, function(){
+		  
+		});
 	}
 }
